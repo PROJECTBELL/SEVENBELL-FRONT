@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Ajax</title>
+    <title>Ajax</title>
 </head>
+
 <body>
-  <button type="button" id="getPostButton">Récupérer les articles</button>
-  <ul id="textBlock">
-    <li>Aucun article</li>
-    <li>Aucun article</li>
-    <li>Aucun article</li>
-    <li>Aucun article</li>
-  </ul>
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="./script.js"></script>
+    <button type="button" id="getPostButton">Récupérer les articles</button>
+    <ul id="textBlock">
+        <li>Aucun article</li>
+    </ul>
+    <form id="ask">
+        <div>
+            <label for="link">Veuillez entrer un titre vers votre musique</label>
+            <input id="link" type="text" name="text">
+        </div>
+        <div>
+            <label for="title">Veuillez entrer un lien vers votre musique</label>
+            <input id="title" type="text" name="text">
+        </div>
+        <div>
+            <input id="send" type="submit" value="Envoyer">
+        </div>
+    </form>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
