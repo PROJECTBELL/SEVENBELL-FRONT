@@ -11,6 +11,8 @@ function getPost(){
   });
 }
 
+
+
 function showText(response){
   let textBlock = document.getElementById("textBlock");
   textBlock.innerHTML = "";
