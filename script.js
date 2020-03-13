@@ -18,7 +18,9 @@ function showText(response) {
 
     for (let i = 0; i < response.length; i++) {
         let line = document.createElement("LI");
-        let lineText = document.createTextNode(`Titre: ${response[i].title}, Content: ${response[i].content}, Date: ${response[i].created_at}`);
+        let re = /(.*?(?=T))/
+        let result = re.exec(response[i].created_at)
+        let lineText = document.createTextNode(`${response[i].title}, URL: ${response[i].content}, Date: ${result[i]} `);
         line.appendChild(lineText); // <li>Texte...</li>
         textBlock.appendChild(line);
     }
