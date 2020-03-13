@@ -25,6 +25,42 @@ function showText(response){
   }
 }
 
+
+let voteButtonUP = document.getElementById('vote');
+voteButtonUP.addEventListener('click', votePost)
+function votePost() {
+    var data = {
+        Number: true
+    };
+    var settings = {
+        url: "http://127.0.0.1:3000/posts",
+        method: "PUT",
+        ContentType: "application/json",
+        data: data
+    };
+    $.ajax(settings).done(function(response) {
+        console.log(response);
+    });
+}
+
+let voteButtonDOWN = document.getElementById('vote');
+voteButtonDOWN.addEventListener('click', votePost)
+function votePost() {
+    var data = {
+        Number: true
+    };
+    var settings = {
+        url: "http://127.0.0.1:3000/posts",
+        method: "PUT",
+        ContentType: "application/json",
+        data: data
+    };
+    $.ajax(settings).done(function(response) {
+        console.log(response);
+    });
+}
+
+
 // POST REQUEST
 
 // var data = {
