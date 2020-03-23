@@ -1,3 +1,4 @@
+
 window.onload = function() {
     getPost();
     showText();
@@ -97,3 +98,4 @@ function sendPost() {
         console.log(response);
     });
 }
+
